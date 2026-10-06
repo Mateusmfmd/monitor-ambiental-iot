@@ -1,0 +1,1 @@
+export function parseReading(line){const [kind,metric,raw]=line.trim().split(/\s*,\s*/); if(kind!=="LEITURA"||!metric||!raw||Number.isNaN(Number(raw))) throw new Error("Leitura inválida"); return {metric,value:Number(raw),receivedAt:new Date().toISOString()};}

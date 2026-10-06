@@ -1,0 +1,1 @@
+import test from "node:test"; import assert from "node:assert/strict"; import {parseReading} from "../server/protocol.js"; test("valida leitura serial",()=>{const x=parseReading("LEITURA,temperatura, 23");assert.equal(x.metric,"temperatura");assert.equal(x.value,23);}); test("rejeita protocolo inválido",()=>assert.throws(()=>parseReading("erro")));

@@ -1,0 +1,1 @@
+const byte PINO_SENSOR=A0; unsigned long anterior=0; void setup(){Serial.begin(9600);} void loop(){if(millis()-anterior>=1000){anterior=millis(); int valor=analogRead(PINO_SENSOR); Serial.print("LEITURA,temperatura, "); Serial.println(valor);}}
