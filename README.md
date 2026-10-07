@@ -1,4 +1,5 @@
 # monitor-ambiental-iot
+[![CI](https://github.com/Mateusmfmd/monitor-ambiental-iot/actions/workflows/ci.yml/badge.svg)](https://github.com/Mateusmfmd/monitor-ambiental-iot/actions/workflows/ci.yml)
 
 MVP de IoT que integra Arduino, servidor Node.js e painel web. O Arduino envia leituras pela serial, o servidor valida o protocolo e disponibiliza os dados para o painel.
 
